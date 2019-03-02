@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  which_goal: MyString
+  goal: one
+
+two:
+  which_goal: MyString
+  goal: two

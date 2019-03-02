@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Goal name:</strong>
+  <%= @goal.goal_name %>
+</p>
+
+<% if @goal.deposits.any? %>
+List of Deposits:
+<ul>
+<% @goal.deposits.each do |goal| %>
+  <li><%= deposit.which_goal %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>The Customer has no Deposits yet</p>
+<% link_to 'Make a new Deposit', new_deposit_path %>
+<% end %>
+
+<%= link_to 'Edit', edit_goal_path(@goal) %> |
+<%= link_to 'Back', goals_path %>
